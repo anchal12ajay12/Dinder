@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="@drawable/rounded_10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="999dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_dog_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/dinder_logo"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"
+                android:indeterminateTint="@color/brown"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Timmy"
+            android:textColor="@color/brown"
+            android:textSize="24sp"
+            android:fontFamily="@font/comicneue_bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/petted_on"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/comicneue_bold"/>
+
+        <TextView
+            android:id="@+id/tv_petted_on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="18th June 2020"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:fontFamily="@font/comicneue_bold"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+</LinearLayout>
